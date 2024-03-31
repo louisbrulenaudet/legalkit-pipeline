@@ -18,7 +18,6 @@ from dotenv import load_dotenv
 from datetime import date, datetime
 
 from data.api.piste import PisteAPI, Code, Article
-from data.api.gouv import BofipAPI
 
 from tqdm import tqdm
 from datasets import Dataset
