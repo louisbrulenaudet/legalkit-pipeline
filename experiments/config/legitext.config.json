@@ -1,0 +1,464 @@
+[
+	{
+		"base": "Code de l'artisanat",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-artisanat",
+		"textId": "LEGITEXT000006075116"
+	},
+	{
+		"base": "Code de l'action sociale et des familles",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-action-sociale-familles",
+		"textId": "LEGITEXT000006074069"
+	},
+	{
+		"base": "Code des assurances",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-assurances",
+		"textId": "LEGITEXT000006073984"
+	},
+	{
+		"base": "Code de l'aviation civile",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-aviation-civile",
+		"textId": "LEGITEXT000006074234"
+	},
+	{
+		"base": "Code du cinéma et de l'image animée",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-cinema-image-animee",
+		"textId": "LEGITEXT000020908868"
+	},
+	{
+		"base": "Code civil",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-civil",
+		"textId": "LEGITEXT000006070721"
+	},
+	{
+		"base": "Code de la commande publique",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-commande-publique",
+		"textId": "LEGITEXT000037701019"
+	},
+	{
+		"base": "Code de commerce",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-commerce",
+		"textId": "LEGITEXT000005634379"
+	},
+	{
+		"base": "Code des communes",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-communes",
+		"textId": "LEGITEXT000006070162"
+	},
+	{
+		"base": "Code des communes de la Nouvelle-Calédonie",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-communes-nouvelle-caledonie",
+		"textId": "LEGITEXT000006070300"
+	},
+	{
+		"base": "Code de la consommation",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-consommation",
+		"textId": "LEGITEXT000006069565"
+	},
+	{
+		"base": "Code de la construction et de l'habitation",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-construction-habitation",
+		"textId": "LEGITEXT000006074096"
+	},
+	{
+		"base": "Code de la défense",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-defense",
+		"textId": "LEGITEXT000006071307"
+	},
+	{
+		"base": "Code de déontologie des architectes",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-deontologie-architectes",
+		"textId": "LEGITEXT000006074232"
+	},
+	{
+		"base": "Code disciplinaire et pénal de la marine marchande",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-disciplinaire-penal-marine-marchande",
+		"textId": "LEGITEXT000006071188"
+	},
+	{
+		"base": "Code du domaine de l'Etat",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-domaine-etat",
+		"textId": "LEGITEXT000006071188"
+	},
+	{
+		"base": "Code du domaine de l'Etat et des collectivités publiques applicable à la collectivité territoriale de Mayotte",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-domaine-etat-collectivites-mayotte",
+		"textId": "LEGITEXT000006074235"
+	},
+	{
+		"base": "Code du domaine public fluvial et de la navigation intérieure",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-domaine-public-fluvial-navigation-interieure",
+		"textId": "LEGITEXT000006074237"
+	},
+	{
+		"base": "Code des douanes",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-douanes",
+		"textId": "LEGITEXT000006071570"
+	},
+	{
+		"base": "Code des douanes de Mayotte",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-douanes-mayotte",
+		"textId": "LEGITEXT000006071645"
+	},
+	{
+		"base": "Code de l'éducation",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-education",
+		"textId": "LEGITEXT000006071191"
+	},
+	{
+		"base": "Code électoral",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-electoral",
+		"textId": "LEGITEXT000006070239"
+	},
+	{
+		"base": "Code de l'énergie",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-energie",
+		"textId": "LEGITEXT000023983208"
+	},
+	{
+		"base": "Code de l'entrée et du séjour des étrangers et du droit d'asile",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-entree-sejour-etrangers-droit-asile",
+		"textId": "LEGITEXT000006070158"
+	},
+	{
+		"base": "Code de l'environnement",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-environnement",
+		"textId": "LEGITEXT000006074220"
+	},
+	{
+		"base": "Code de l'expropriation pour cause d'utilité publique",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-expropriation-utilite-publique",
+		"textId": "LEGITEXT000006074224"
+	},
+	{
+		"base": "Code de la famille et de l'aide sociale",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-famille-aide-sociale",
+		"textId": "LEGITEXT000006072637"
+	},
+	{
+		"base": "Code forestier (nouveau)",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-forestier-nouveau",
+		"textId": "LEGITEXT000025244092"
+	},
+	{
+		"base": "Code général de la fonction publique",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-fonction-publique",
+		"textId": "LEGITEXT000044416551"
+	},
+	{
+		"base": "Code général de la propriété des personnes publiques",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-propriete-personnes-publiques",
+		"textId": "LEGITEXT000006070299"
+	},
+	{
+		"base": "Code général des collectivités territoriales",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-collectivites-territoriales",
+		"textId": "LEGITEXT000006070633"
+	},
+	{
+		"base": "Code général des impôts",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-impots",
+		"textId": "LEGITEXT000006069577"
+	},
+	{
+		"base": "Code général des impôts, annexe I",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-impots-annexe-i",
+		"textId": "LEGITEXT000006069568"
+	},
+	{
+		"base": "Code général des impôts, annexe II",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-impots-annexe-ii",
+		"textId": "LEGITEXT000006069569"
+	},
+	{
+		"base": "Code général des impôts, annexe III",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-impots-annexe-iii",
+		"textId": "LEGITEXT000006069574"
+	},
+	{
+		"base": "Code général des impôts, annexe IV",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-impots-annexe-iv",
+		"textId": "LEGITEXT000006069576"
+	},
+	{
+		"base": "Code des impositions sur les biens et services",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-impositions-biens-services",
+		"textId": "LEGITEXT000044595989"
+	},
+	{
+		"base": "Code des instruments monétaires et des médailles",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-instruments-monetaires-medailles",
+		"textId": "LEGITEXT000006070666"
+	},
+	{
+		"base": "Code des juridictions financières",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-juridictions-financieres",
+		"textId": "LEGITEXT000006070249"
+	},
+	{
+		"base": "Code de justice administrative",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-justice-administrative",
+		"textId": "LEGITEXT000006070933"
+	},
+	{
+		"base": "Code de justice militaire (nouveau)",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-justice-militaire-nouveau",
+		"textId": "LEGITEXT000006071360"
+	},
+	{
+		"base": "Code de la justice pénale des mineurs",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-justice-penale-mineurs",
+		"textId": "LEGITEXT000039086952"
+	},
+	{
+		"base": "Code de la Légion d'honneur, de la Médaille militaire et de l'ordre national du Mérite",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-legion-honneur-medaille-militaire-ordre-national-merite",
+		"textId": "LEGITEXT000006071007"
+	},
+	{
+		"base": "Livre des procédures fiscales",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/livre-procedures-fiscales",
+		"textId": "LEGITEXT000006069583"
+	},
+	{
+		"base": "Code minier",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-minier",
+		"textId": "LEGITEXT000006071785"
+	},
+	{
+		"base": "Code minier (nouveau)",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-minier-nouveau",
+		"textId": "LEGITEXT000023501962"
+	},
+	{
+		"base": "Code monétaire et financier",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-monetaire-financier",
+		"textId": "LEGITEXT000006072026"
+	},
+	{
+		"base": "Code de la mutualité",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-mutualite",
+		"textId": "LEGITEXT000006074067"
+	},
+	{
+		"base": "Code de l'organisation judiciaire",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-organisation-judiciaire",
+		"textId": "LEGITEXT000006071164"
+	},
+	{
+		"base": "Code du patrimoine",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-patrimoine",
+		"textId": "LEGITEXT000006074236"
+	},
+	{
+		"base": "Code pénal",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-penal",
+		"textId": "LEGITEXT000006070719"
+	},
+	{
+		"base": "Code pénitentiaire",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-penitentiaire",
+		"textId": "LEGITEXT000045476241"
+	},
+	{
+		"base": "Code des pensions civiles et militaires de retraite",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-pensions-civiles-militaires-retraite",
+		"textId": "LEGITEXT000006070302"
+	},
+	{
+		"base": "Code des pensions de retraite des marins français du commerce, de pêche ou de plaisance",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-pensions-retraite-marins-francais-commerce-peche-plaisance",
+		"textId": "LEGITEXT000006074066"
+	},
+	{
+		"base": "Code des pensions militaires d'invalidité et des victimes de guerre",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-pensions-militaires-invalidite-victimes-guerre",
+		"textId": "LEGITEXT000006074068"
+	},
+	{
+		"base": "Code des ports maritimes",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-ports-maritimes",
+		"textId": "LEGITEXT000006074233"
+	},
+	{
+		"base": "Code des postes et des communications électroniques",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-postes-communications-electroniques",
+		"textId": "LEGITEXT000006070987"
+	},
+	{
+		"base": "Code de procédure civile",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-procedure-civile",
+		"textId": "LEGITEXT000006070716"
+	},
+	{
+		"base": "Code de procédure pénale",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-procedure-penale",
+		"textId": "LEGITEXT000006071154"
+	},
+	{
+		"base": "Code des procédures civiles d'exécution",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-procedures-civiles-execution",
+		"textId": "LEGITEXT000025024948"
+	},
+	{
+		"base": "Code de la propriété intellectuelle",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-propriete-intellectuelle",
+		"textId": "LEGITEXT000006069414"
+	},
+	{
+		"base": "Code de la recherche",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-recherche",
+		"textId": "LEGITEXT000006071190"
+	},
+	{
+		"base": "Code des relations entre le public et l'administration",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-relations-public-administration",
+		"textId": "LEGITEXT000031366350"
+	},
+	{
+		"base": "Code de la route",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-route",
+		"textId": "LEGITEXT000006074228"
+	},
+	{
+		"base": "Code rural (ancien)",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-rural-ancien",
+		"textId": "LEGITEXT000006071366"
+	},
+	{
+		"base": "Code rural et de la pêche maritime",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-rural-peche-maritime",
+		"textId": "LEGITEXT000006071367"
+	},
+	{
+		"base": "Code de la santé publique",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-sante-publique",
+		"textId": "LEGITEXT000006072665"
+	},
+	{
+		"base": "Code de la sécurité intérieure",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-securite-interieure",
+		"textId": "LEGITEXT000025503132"
+	},
+	{
+		"base": "Code de la sécurité sociale",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-securite-sociale",
+		"textId": "LEGITEXT000006073189"
+	},
+	{
+		"base": "Code du service national",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-service-national",
+		"textId": "LEGITEXT000006071335"
+	},
+	{
+		"base": "Code du sport",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-sport",
+		"textId": "LEGITEXT000006071318"
+	},
+	{
+		"base": "Code du tourisme",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-tourisme",
+		"textId": "LEGITEXT000006074073"
+	},
+	{
+		"base": "Code des transports",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-transports",
+		"textId": "LEGITEXT000023086525"
+	},
+	{
+		"base": "Code du travail",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-travail",
+		"textId": "LEGITEXT000006072050"
+	},
+	{
+		"base": "Code du travail maritime",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-travail-maritime",
+		"textId": "LEGITEXT000006072051"
+	},
+	{
+		"base": "Code de l'urbanisme",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-urbanisme",
+		"textId": "LEGITEXT000006074075"
+	},
+	{
+		"base": "Code de la voirie routière",
+		"nature": "CODE",
+		"instance": "louisbrulenaudet/code-voirie-routiere",
+		"textId": "LEGITEXT000006070667"
+	}
+]
