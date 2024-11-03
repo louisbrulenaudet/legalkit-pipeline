@@ -11,12 +11,9 @@
 import json
 import datetime
 
+
 class JSONConverter:
-    def __init__(
-        self, 
-        input_file_path: str, 
-        output_file_path: str
-    ):
+    def __init__(self, input_file_path: str, output_file_path: str):
         """
         Initialize a JSONConverter instance.
 
@@ -35,10 +32,7 @@ class JSONConverter:
         self.output_file_path = output_file_path
         self.data = None
 
-
-    def open_input_file(
-        self
-    ):
+    def open_input_file(self):
         """
         Open and read the input JSON file.
 
@@ -56,10 +50,7 @@ class JSONConverter:
 
         return data
 
-
-    def save_output_file(
-        self
-    ):
+    def save_output_file(self):
         """
         Save the data to the output JSON file with UTF-8 encoding.
 
@@ -73,10 +64,7 @@ class JSONConverter:
             data = json.dumps(self.data, ensure_ascii=False, indent=2)
             output_file.write(data)
 
-
-    def convert_ascii_to_utf8(
-        self
-    ):
+    def convert_ascii_to_utf8(self):
         """
         Convert the input JSON data to UTF-8 encoding if it is ASCII encoded.
 
@@ -97,9 +85,7 @@ class JSONConverter:
 
 class DateConverter:
     @staticmethod
-    def unix_to_bson(
-        timestamp:int
-    ) -> str:
+    def unix_to_bson(timestamp: int) -> str:
         """
         Converts a Unix timestamp in milliseconds to BSON format.
 
@@ -127,15 +113,20 @@ class DateConverter:
         # Create a datetime object
         dt = datetime.datetime.utcfromtimestamp(seconds)
 
-        bson_date = datetime.datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second, dt.microsecond * 1000)
+        bson_date = datetime.datetime(
+            dt.year,
+            dt.month,
+            dt.day,
+            dt.hour,
+            dt.minute,
+            dt.second,
+            dt.microsecond * 1000,
+        )
 
         return bson_date
 
-
     @staticmethod
-    def ISO8601_to_bson(
-        timestamp:str
-    ) -> str:
+    def ISO8601_to_bson(timestamp: str) -> str:
         """
         Converts a ISO 8601 timestamp to BSON format.
 
@@ -161,6 +152,14 @@ class DateConverter:
         dt = datetime.datetime.strptime(timestamp, "%Y-%m-%d")
 
         # Convert the datetime object to BSON date format
-        bson_date = datetime.datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second, dt.microsecond * 1000)
+        bson_date = datetime.datetime(
+            dt.year,
+            dt.month,
+            dt.day,
+            dt.hour,
+            dt.minute,
+            dt.second,
+            dt.microsecond * 1000,
+        )
 
         return bson_date

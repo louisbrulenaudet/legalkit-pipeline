@@ -19,7 +19,7 @@ from functools import wraps
 def get_memory_usage():
     """
     Get the memory usage of the current process.
-    
+
     Returns
     -------
     memory_usage : int
@@ -29,42 +29,47 @@ def get_memory_usage():
         process = ctypes.windll.kernel32.GetCurrentProcess()
         kernel32 = ctypes.windll.kernel32
         memory_info = ctypes.c_ulong()
-        kernel32.GetProcessMemoryInfo(process, ctypes.byref(memory_info), ctypes.sizeof(memory_info))
-        
+        kernel32.GetProcessMemoryInfo(
+            process, ctypes.byref(memory_info), ctypes.sizeof(memory_info)
+        )
+
         return memory_info.value
     else:
-        return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * (1024 if sys.platform != 'darwin' else 1)
+        return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * (
+            1024 if sys.platform != "darwin" else 1
+        )
 
 
 def memory(print_report=True):
     """
     A decorator to monitor the memory usage of a function.
-    
+
     Parameters
     ----------
     print_report : bool, optional
         If True, prints the memory usage report after the function completes. Default is True.
-    
+
     Returns
     -------
     wrapper : function
         The decorated function with added memory monitoring functionality.
     """
+
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
             """
             The wrapper function that monitors memory usage.
-            
+
             Parameters
             ----------
-            
+
             *args : tuple
                 Positional arguments passed to the decorated function.
-            
+
             **kwargs : dict
                 Keyword arguments passed to the decorated function.
-            
+
             Returns
             -------
             result : any
@@ -75,7 +80,7 @@ def memory(print_report=True):
             result = func(*args, **kwargs)
 
             end_memory = get_memory_usage()
-            memory_usage_mb = (end_memory - start_memory) / (1024.0 ** 2)
+            memory_usage_mb = (end_memory - start_memory) / (1024.0**2)
 
             if print_report:
                 print(f"Memory Usage Report for '{func.__name__}':")
@@ -91,40 +96,41 @@ def memory(print_report=True):
 def timer(print_time=True, return_time=False):
     """
     A decorator to measure the execution time of a function.
-    
+
     Parameters
     ----------
     print_time : bool, optional
         If True, prints the execution time after the function completes. Default is True.
-    
+
     return_time : bool, optional
         If True, returns a tuple containing the result of the function and the elapsed time. Default is False.
-    
+
     Returns
     -------
     wrapper : function
         The decorated function with added timing functionality.
     """
+
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
             """
             The wrapper function that measures the execution time.
-            
+
             Parameters
             ----------
-            
+
             *args : tuple
                 Positional arguments passed to the decorated function.
-            
+
             **kwargs : dict
                 Keyword arguments passed to the decorated function.
-            
+
             Returns
             -------
             result : any
                 The result of the decorated function.
-            
+
             elapsed_time : float, optional
                 If `return_time` is True, returns the elapsed time along with the result.
             """

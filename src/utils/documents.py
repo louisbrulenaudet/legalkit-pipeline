@@ -8,12 +8,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
 import json
 
-def read_json_file(
-    file_path:str
-):
+
+def read_json_file(file_path: str):
     """
     Read JSON data from a file.
 
@@ -47,6 +45,6 @@ def read_json_file(
 
     except FileNotFoundError:
         raise FileNotFoundError(f"File '{file_path}' not found.")
-    
+
     except json.JSONDecodeError:
         raise json.JSONDecodeError(f"Invalid JSON format in '{file_path}'.")

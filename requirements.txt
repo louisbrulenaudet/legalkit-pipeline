@@ -1,0 +1,6 @@
+datasets
+huggingface_hub
+jinja2
+oauthlib
+requests-oauthlib
+tqdm

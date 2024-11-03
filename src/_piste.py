@@ -17,12 +17,9 @@ from oauthlib.oauth2 import BackendApplicationClient
 
 load_dotenv()
 
+
 class PisteAPI:
-    def __init__(
-        self, 
-        client_id:str=None, 
-        client_secret:str=None
-    ) -> None:
+    def __init__(self, client_id: str = None, client_secret: str = None) -> None:
         """
         Initializes an instance of the PisteAPI class for interacting with the PISTE API.
 
@@ -42,10 +39,7 @@ class PisteAPI:
         self.client_secret = client_secret or os.getenv("SECRET_KEY")
         self.token = self.oauth()
 
-
-    def oauth(
-        self
-    ) -> str:
+    def oauth(self) -> str:
         """
         Obtains an access token for authentication with the PISTE API.
 
@@ -54,28 +48,19 @@ class PisteAPI:
         token : dict
             A dictionary containing the access token information.
         """
-        client = BackendApplicationClient(
-            client_id=self.client_id
-        )
+        client = BackendApplicationClient(client_id=self.client_id)
 
-        oauth = OAuth2Session(
-            client=client
-        )
+        oauth = OAuth2Session(client=client)
 
         token = oauth.fetch_token(
             token_url="https://oauth.piste.gouv.fr/api/oauth/token",
             client_id=self.client_id,
-            client_secret=self.client_secret
+            client_secret=self.client_secret,
         )
 
         return token
 
-
-    def post(
-        self, 
-        url:str, 
-        data:dict
-    ) -> dict:
+    def post(self, url: str, data: dict) -> dict:
         """
         Fetches a resource from the PISTE API using the provided URL and data.
 
@@ -92,29 +77,17 @@ class PisteAPI:
         response : dict
             A dictionary representing the fetched resource.
         """
-        piste = OAuth2Session(
-            client_id=self.client_id, 
-            token=self.token
-        )
+        piste = OAuth2Session(client_id=self.client_id, token=self.token)
 
-        headers = headers = {
-            "Content-Type": "application/json"
-        }
+        headers = headers = {"Content-Type": "application/json"}
 
-        response = piste.post(
-            url,
-            data=json.dumps(data),
-            headers=headers
-        )
+        response = piste.post(url, data=json.dumps(data), headers=headers)
 
         return json.loads(response.content.decode("utf-8"))
 
 
 class Code:
-    def __init__(
-        self, 
-        code:list
-    ):
+    def __init__(self, code: list):
         """
         Initializes an instance of the Code class to extract section information.
 
@@ -129,11 +102,7 @@ class Code:
         """
         self.data = []
 
-
-    def extract_section_info(
-        self, 
-        section:dict
-    ) -> None:
+    def extract_section_info(self, section: dict) -> None:
         """
         Extracts information from a section and its articles.
 
@@ -153,17 +122,13 @@ class Code:
                 article_data = {
                     "id": article.get("id", ""),
                     "num": article.get("num", ""),
-                    "title": section.get("title", "")
+                    "title": section.get("title", ""),
                 }
                 self.data.append(article_data)
 
         return None
 
-
-    def extract(
-        self, 
-        data:list
-    ) -> list:
+    def extract(self, data: list) -> list:
         """
         Recursively extracts section information from a nested data structure.
 
@@ -187,10 +152,7 @@ class Code:
 
 
 class Article:
-    def __init__(
-        self, 
-        article:list
-    ):
+    def __init__(self, article: list):
         """
         Initializes an instance of the Article class to extract informations.
 
@@ -206,10 +168,7 @@ class Article:
         self.article = article
         self.data = []
 
-
-    def extract(
-        self
-    ) -> list:
+    def extract(self) -> list:
         """
         Extracts information from a section and its articles.
 
@@ -226,16 +185,59 @@ class Article:
         try:
             if "etat" in self.article and self.article["etat"] != "ABROGE":
                 article_data = {
-                    "id": self.article.get("id", ""),
-                    "date": self.article.get("dateDebut", ""),
-                    "expiration": self.article.get("dateFin", ""),
+                    "conditionDiffere": self.article.get("conditionDiffere", ""),
+                    "infosComplementaires": self.article.get(
+                        "infosComplementaires", ""
+                    ),
+                    "surtitre": self.article.get("surtitre", ""),
+                    "nature": self.article.get("nature", ""),
+                    "texteHtml": self.article.get("texteHtml", ""),
+                    "type": self.article.get("type", ""),
+                    "dateFinExtension": self.article.get("dateFinExtension", ""),
+                    "versionPrecedente": self.article.get("versionPrecedente", ""),
+                    "dateDebut": self.article.get("dateDebut", ""),
+                    "refInjection": self.article.get("refInjection", ""),
+                    "idTexte": self.article.get("idTexte", ""),
+                    "idTechInjection": self.article.get("idTechInjection", ""),
+                    "origine": self.article.get("origine", ""),
+                    "dateDebutExtension": self.article.get("dateDebutExtension", ""),
+                    "dateFin": self.article.get("dateFin", ""),
+                    "idEliAlias": self.article.get("idEliAlias", ""),
+                    "cidTexte": self.article.get("cidTexte", ""),
+                    "sectionParentId": self.article.get("sectionParentId", ""),
+                    "multipleVersions": self.article.get("multipleVersions", ""),
+                    "etat": self.article.get("etat", ""),
+                    "versionArticle": self.article.get("versionArticle", ""),
+                    "comporteLiensSP": self.article.get("comporteLiensSP", ""),
+                    "sectionParentTitre": self.article.get("sectionParentTitre", ""),
+                    "ordre": self.article.get("ordre", ""),
+                    "infosRestructurationBranche": self.article.get(
+                        "infosRestructurationBranche", ""
+                    ),
+                    "idEli": self.article.get("idEli", ""),
+                    "sectionParentCid": self.article.get("sectionParentCid", ""),
+                    "nota": self.article.get("nota", ""),
                     "num": self.article.get("num", ""),
-                    "text": self.article.get("texte", "")
+                    "numeroBo": self.article.get("numeroBo", ""),
+                    "texte": self.article.get("texte", ""),
+                    "id": self.article.get("id", ""),
+                    "infosRestructurationBrancheHtml": self.article.get(
+                        "infosRestructurationBrancheHtml", ""
+                    ),
+                    "historique": self.article.get("historique", ""),
+                    "cid": self.article.get("cid", ""),
+                    "infosComplementairesHtml": self.article.get(
+                        "infosComplementairesHtml", ""
+                    ),
+                    "renvoi": self.article.get("renvoi", ""),
+                    "fullSectionsTitre": self.article.get("fullSectionsTitre", ""),
+                    "notaHtml": self.article.get("notaHtml", ""),
+                    "inap": self.article.get("inap", ""),
                 }
 
                 self.data.append(article_data)
-            
+
             return self.data
-        
-        except:
-            pass
+
+        except Exception as e:
+            print(f"Error occurred: {str(e)}")

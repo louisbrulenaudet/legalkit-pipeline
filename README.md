@@ -14,32 +14,6 @@ Join us in our commitment to advancing legal transparency and knowledge accessib
 
 The LegalKit Pipeline project draws inspiration for cutting-edge techniques such as fine-tuning and the use of Retrieval-Augmented Generation (RAG) to create efficient and accurate language models tailored for legal practice.
 
-### Fine-Tuning for Legal Practice
-
-Fine-tuning plays a pivotal role in adapting pre-trained language models (LLMs) to the intricacies of legal practice. It involves adjusting the parameters of a pre-trained model through additional training on task-specific or domain-specific data. By fine-tuning LLMs with specific instructions, we aim to enhance their adaptability to diverse legal tasks, such as translation, summarization, and question-answering.
-
-Instruction-based fine-tuning is particularly noteworthy for its structured and interpretable approach. By leveraging human-provided instructions, such as text prompts or explicit task descriptions, we can guide the behavior of LLMs in a controlled and context-aware manner. This approach not only enhances the performance of LLMs but also improves their interpretability and adaptability to specialized legal tasks.
-
-**Key Benefits of Instruction-Based Fine-Tuning**
-
-Instruction-based fine-tuning offers several key benefits for legal practitioners and researchers:
-
-- **Task-Specific Adaptation:** LLMs fine-tuned with specific instructions demonstrate remarkable adaptability to a wide range of legal tasks, from legal document analysis to case summarization, guided by task-specific instructions.
-- **Reduced Ambiguity:** Traditional LLMs may produce ambiguous or contextually inappropriate responses. Instruction-based fine-tuning reduces ambiguity by providing clearer and more context-aware model outputs, thereby enhancing the quality of legal analysis and decision-making.
-- **Efficient Knowledge Transfer:** Instructions can encapsulate domain-specific knowledge, facilitating efficient knowledge transfer to LLMs. This enables LLMs to benefit from expert guidance in specialized legal domains such as tax law, contract analysis, and regulatory compliance.
-- **Interpretability:** Instruction-based fine-tuning enhances the interpretability of LLM behavior. Human-readable instructions make it easier to understand and control model outputs, enabling legal practitioners to trust and effectively utilize LLM-generated insights.
-- **Adaptive Behavior:** LLMs, post instruction-based fine-tuning, exhibit adaptive behavior that is responsive to both explicit task descriptions and implicit cues within the provided legal text. This adaptability enables LLMs to generate contextually relevant and accurate legal analyses, enhancing their utility in real-world legal applications.
-
-### Retrieval-Augmented Generation
-
-Retrieval-Augmented Generation (RAG) introduces a novel approach to language model fine-tuning, offering several key benefits for legal practitioners and researchers:
-
-- **Enhanced Contextual Understanding:** RAG leverages retriever models to augment generation with relevant context from external knowledge sources. This enables LLMs to generate responses that are more contextually grounded and relevant to the task at hand, improving the quality and accuracy of legal analyses.
-- **Broader Knowledge Integration:** By incorporating external knowledge sources into the generation process, RAG expands the scope of information accessible to LLMs. This facilitates more comprehensive legal analyses, allowing practitioners to consider a wider range of legal and regulations when generating responses.
-- **Improved Response Coherence:** RAG helps mitigate the issue of response ambiguity by providing additional context from external knowledge sources. This leads to more coherent and logically consistent responses, reducing the likelihood of generating nonsensical or contextually inappropriate outputs.
-- **Efficient Information Retrieval:** RAG streamlines the process of accessing relevant information by leveraging retriever models to efficiently retrieve contextually relevant passages from external knowledge sources. This enhances the efficiency of legal research and analysis, enabling practitioners to access pertinent information more quickly and accurately.
-- **Scalability and Adaptability:** RAG's modular architecture allows for easy integration with existing LLMs and retrieval models, making it scalable and adaptable to different legal domains and tasks. This flexibility enables practitioners to tailor RAG-based solutions to their specific needs, enhancing their utility in real-world legal applications.
-
 ## Tech Stack
 
 **Language:** Python +3.9.0
@@ -163,61 +137,6 @@ datasets_list = load_datasets(
 dataset = datasets.concatenate_datasets(
     datasets_list
 )
-```
-
-## Dataset generation
-
-This JSON file is a list of dictionaries, each dictionary contains the following fields:
-
-- `instruction`: `string`, presenting the instruction linked to the element.
-- `input`: `string`, signifying the input details for the element.
-- `output`: `string`, indicating the output information for the element.
-- `start`: `string`, the date of entry into force of the article. 
-- `expiration`: `string`, the date of expiration of the article. 
-- `num`: `string`, the id of the article.
-
-We used the following list of instructions for generating the dataset:
-```python
-instructions = [
-    "Compose l'intégralité de l'article sous forme écrite.",
-    "Écris la totalité du contenu de l'article.",
-    "Formule la totalité du texte présent dans l'article.",
-    "Produis l'intégralité de l'article en écriture.",
-    "Développe l'article dans son ensemble par écrit.",
-    "Génère l'ensemble du texte contenu dans l'article.",
-    "Formule le contenu intégral de l'article en entier.",
-    "Rédige la totalité du texte de l'article en entier.",
-    "Compose l'intégralité du contenu textuel de l'article.",
-    "Rédige l'ensemble du texte qui constitue l'article.",
-    "Formule l'article entier dans son contenu écrit.",
-    "Composez l'intégralité de l'article sous forme écrite.",
-    "Écrivez la totalité du contenu de l'article.",
-    "Formulez la totalité du texte présent dans l'article.",
-    "Développez l'article dans son ensemble par écrit.",
-    "Générez l'ensemble du texte contenu dans l'article.",
-    "Formulez le contenu intégral de l'article en entier.",
-    "Rédigez la totalité du texte de l'article en entier.",
-    "Composez l'intégralité du contenu textuel de l'article.",
-    "Écrivez l'article dans son intégralité en termes de texte.",
-    "Rédigez l'ensemble du texte qui constitue l'article.",
-    "Formulez l'article entier dans son contenu écrit.",
-    "Composer l'intégralité de l'article sous forme écrite.",
-    "Écrire la totalité du contenu de l'article.",
-    "Formuler la totalité du texte présent dans l'article.",
-    "Produire l'intégralité de l'article en écriture.",
-    "Développer l'article dans son ensemble par écrit.",
-    "Générer l'ensemble du texte contenu dans l'article.",
-    "Formuler le contenu intégral de l'article en entier.",
-    "Rédiger la totalité du texte de l'article en entier.",
-    "Composer l'intégralité du contenu textuel de l'article.",
-    "Rédiger l'ensemble du texte qui constitue l'article.",
-    "Formuler l'article entier dans son contenu écrit.",
-    "Quelles sont les dispositions de l'article ?",
-    "Quelles dispositions sont incluses dans l'article ?",
-    "Quelles sont les dispositions énoncées dans l'article ?",
-    "Quel est le texte intégral de l'article ?",
-    "Quelle est la lettre de l'article ?"
-]
 ```
 
 ## Citing this project
